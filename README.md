@@ -40,20 +40,25 @@ Si todo fue bien, en la ruta `.../tutorial_latex` tendremos todos los archivos n
 
 Quitamos los capítulos que no nos interesan y el índice se renderiza automáticamente. Eliminar todas las entradas desde la linea `#5678` (capítulos 14 y ss.) en adelante y finalizar el archivo con:
 ```
-...
+(...)
 \renewcommand{\indexname}{Índice}
 \printindex
 \end{document}
 ```
+---
 
 ### sphinxmessages.sty
+
 `\renewcommand{\literalblockcontinuedname}{proviene de la página anterior}` texto quiebre de página en bloques de código.
 
 `\renewcommand{\literalblockcontinuesname}{continúa en la próxima página}` texto quiebre de página en bloques de código.
 
+---
 ### sphinx.sty
+
 `\DeclareBoolOption[false]{verbatimwithframe}` quita recuadro en bloque de sintaxis
 
+---
 ### sphinxhighlight.sty
 En este archivo editamos el coloreado de los distintos elementos del documento. En principio comentamos (`%`) todas las entradas que definen colores específicos. Queda por defecto todo en B & N.
 

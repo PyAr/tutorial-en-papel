@@ -26,27 +26,30 @@ Si todo fue bien, en la ruta `.../tutorial_latex` tendremos todos los archivos n
 
 ## Ajustes en archivos '.tex'
 ### python-docs-es.tex
+Añadir:
+- `\documentclass[a5paper,10pt,spanish]{sphinxmanual}` tamaño de la hoja
 
-`\documentclass[a5paper,10pt,spanish]{sphinxmanual}` tamaño de la hoja
-
-`
+- `
 \usepackage{geometry}
 \geometry{
  right=20mm
  }` margen para imprimir 
 
-`\title{Tutorial de Python}
+- `\title{Tutorial de Python}
 \release{3.10}` información que se replica en los encabezados 
 
-Quitamos los capítulos que no nos interesan y el índice se renderiza automáticamente. Eliminar todas las entradas desde la linea `#5678` (capítulos 14 y ss.) en adelante y finalizar el archivo con:
+Eliminar:
+- todas las entradas `\subsubsection*{Notas al pie}` 
+- Entradas desde la linea `#5678` en adelante (capítulos 14 y ss.) y finalizar el archivo con:
 ```
 (...)
 \renewcommand{\indexname}{Índice}
 \printindex
 \end{document}
 ```
----
+Las notas no se pierden y el índice se renderiza automáticamente.
 
+---
 ### sphinxmessages.sty
 
 `\renewcommand{\literalblockcontinuedname}{proviene de la página anterior}` texto quiebre de página en bloques de código.

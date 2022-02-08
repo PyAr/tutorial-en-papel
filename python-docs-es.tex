@@ -27,7 +27,8 @@
   UprightFont    = *,
   ItalicFont     = *Italic,
   BoldFont       = *Bold,
-  BoldItalicFont = *BoldItalic
+  BoldItalicFont = *BoldItalic,
+  Scale=0.9
 ]
 \setsansfont{FreeSans}[
   Extension      = .ttf,
@@ -35,6 +36,7 @@
   ItalicFont     = *Oblique,
   BoldFont       = *Bold,
   BoldItalicFont = *BoldOblique,
+  Scale=0.9
 ]
 \setmonofont{FreeMono}[
   Extension      = .ttf,
@@ -42,6 +44,7 @@
   ItalicFont     = *Oblique,
   BoldFont       = *Bold,
   BoldItalicFont = *BoldOblique,
+  Scale=0.9
 ]
 
 
@@ -114,16 +117,13 @@ El intérprete de Python y la extensa librería estándar se encuentran disponib
 El intérprete de Python es fácilmente extensible con funciones y tipos de datos implementados en C o C++ (u otros lenguajes que permitan ser llamados desde C). Python también es apropiado como un lenguaje para extender aplicaciones modificables.
 
 \sphinxAtStartPar
-Este tutorial introduce al lector informalmente a los conceptos básicos y las funcionalidades del lenguaje de programación Python y a su sistema. Ayuda a tener un interprete de Python accesible para una experiencia práctica, todos los ejemplos son auto\sphinxhyphen{}contenidos, permitiendo utilizar el tutorial sin conexión.
+Este tutorial introduce al lector informalmente a los conceptos básicos y las funcionalidades del lenguaje de programación Python y a su sistema. Ayuda tener un interprete de Python accesible para una experiencia práctica, todos los ejemplos son auto\sphinxhyphen{}contenidos, permitiendo utilizar el tutorial sin conexión.
 
 \sphinxAtStartPar
-Para una descripción de los objetos estándar y de los módulos, ver \DUrole{xref,std,std-ref}{library\sphinxhyphen{}index}. \DUrole{xref,std,std-ref}{reference\sphinxhyphen{}index} dónde se ofrece una definición más formal del lenguaje. Para escribir extensiones en C o C++, leer \DUrole{xref,std,std-ref}{extending\sphinxhyphen{}index} y \DUrole{xref,std,std-ref}{c\sphinxhyphen{}api\sphinxhyphen{}index}. Existen diversos libros que cubren Python en detalle.
+No busca ser exhaustivo ni cubrir cada una de las características del lenguaje, ni siquiera las más utilizadas. En vez de eso, pretende introducir muchas de las funcionalidades más notables y brindar una idea clara acerca del estilo y el tipo de lenguaje que es Python. 
 
 \sphinxAtStartPar
-Este tutorial no pretende ser exhaustivo ni cubrir cada una de las características del lenguaje, ni siquiera las más utilizadas. En vez de eso, pretende introducir muchas de las funcionalidades más notables y brindar una idea clara acerca del estilo y el tipo de lenguaje que es Python. Después de leerlo podrás leer y escribir módulos y programas en Python, y estarás listo para aprender más acerca de las diversas librerías y módulos descritos en \DUrole{xref,std,std-ref}{library\sphinxhyphen{}index}.
-
-\sphinxAtStartPar
-Es interesante leer el {\hyperref[\detokenize{glossary:glossary}]{\sphinxcrossref{\DUrole{std,std-ref}{Glosario}}}}.
+Después de leer este material podrás leer y escribir módulos y programas en Python. ¡Estarás listo para aprender más acerca de las diversas bibliotecas y módulos!
 
 
 \chapter{Abriendo el apetito}

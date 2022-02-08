@@ -26,7 +26,7 @@ Si todo fue bien, en la ruta `.../tutorial_latex` tendremos todos los archivos n
 
 ## Ajustes en archivos '.tex'
 ### python-docs-es.tex
-Añadir:
+Añadir / modificar:
 - `\documentclass[a5paper,10pt,spanish]{sphinxmanual}` tamaño de la hoja
 
 - `
@@ -37,6 +37,9 @@ Añadir:
 
 - `\title{Tutorial de Python}
 \release{3.10}` información que se replica en los encabezados 
+
+- `\usepackage[gray]{xcolor}` el coloreado pasa a escala de grises. Se puede utilizar _[monochrome]_ para que directamente todo quede en negro.
+- `\fvset{fontsize=\footnotesize}` achica el tamaño de fuente en los cuadros de código.
 
 Eliminar:
 - todas las entradas `\subsubsection*{Notas al pie}` 
@@ -60,8 +63,4 @@ Las notas no se pierden y el índice se renderiza automáticamente.
 ### sphinx.sty
 
 `\DeclareBoolOption[false]{verbatimwithframe}` quita recuadro en bloque de sintaxis
-
----
-### sphinxhighlight.sty
-En este archivo editamos el coloreado de los distintos elementos del documento. En principio comentamos (`%`) todas las entradas que definen colores específicos. Queda por defecto todo en B & N.
 

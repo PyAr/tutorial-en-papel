@@ -39,7 +39,7 @@ Añadir / modificar:
 \release{3.10}` información que se replica en los encabezados 
 
 - `\usepackage[gray]{xcolor}` el coloreado pasa a escala de grises. Se puede utilizar _[monochrome]_ para que directamente todo quede en negro.
-- `\fvset{fontsize=\footnotesize}` achica el tamaño de fuente en los cuadros de código.
+- `\fvset{fontsize=\footnotesize}` achica el tamaño de fuente en los bloques de sintaxis.
 
 Eliminar:
 - todas las entradas `\subsubsection*{Notas al pie}` 
@@ -53,14 +53,8 @@ Eliminar:
 Las notas no se pierden y el índice se renderiza automáticamente.
 
 ---
-### sphinxmessages.sty
-
-`\renewcommand{\literalblockcontinuedname}{proviene de la página anterior}` texto quiebre de página en bloques de código.
-
-`\renewcommand{\literalblockcontinuesname}{continúa en la próxima página}` texto quiebre de página en bloques de código.
-
----
 ### sphinx.sty
 
 `\DeclareBoolOption[false]{verbatimwithframe}` quita recuadro en bloque de sintaxis
 
+`\newif\ifsphinxverbatimwithminipage   \sphinxverbatimwithminipagetrue` evita quiebre de página en bloques de código. ~~\sphinxverbatimwithminipagefalse~~ 

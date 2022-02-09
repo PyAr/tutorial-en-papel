@@ -40,10 +40,11 @@ Añadir / modificar:
 
 - `\usepackage[gray]{xcolor}` el coloreado pasa a escala de grises. Se puede utilizar _[monochrome]_ para que directamente todo quede en negro.
 - `\fvset{fontsize=\footnotesize}` achica el tamaño de fuente en los bloques de sintaxis.
+- En las lineas 24 y ss. se definen los tres tipos de letras que se usan en todo el documento. Incluir el parámetro `Scale=0.9` en cada una para achicar el tamaño.
 
 Eliminar:
 - todas las entradas `\subsubsection*{Notas al pie}` 
-- Entradas desde la linea `#5678` en adelante (capítulos 14 y ss.) y finalizar el archivo con:
+- Entradas desde la linea 5678 en adelante (capítulos 14 y ss.) y finalizar el archivo con:
 ```
 (...)
 \renewcommand{\indexname}{Índice}
@@ -55,6 +56,9 @@ Las notas no se pierden y el índice se renderiza automáticamente.
 ---
 ### sphinx.sty
 
-`\DeclareBoolOption[false]{verbatimwithframe}` quita recuadro en bloque de sintaxis
+`\DeclareBoolOption[false]{verbatimwithframe}` cambiar a `false` para quitar recuadro en bloque de sintaxis
 
-`\newif\ifsphinxverbatimwithminipage   \sphinxverbatimwithminipagetrue` evita quiebre de página en bloques de código. ~~\sphinxverbatimwithminipagefalse~~ 
+`\newif\ifsphinxverbatimwithminipage   \sphinxverbatimwithminipagetrue` cambiar a `true` para evitar quiebre de página en bloques de código.
+
+Cambiar `\fancyfoot[RE]{{\py@HeaderFamily\nouppercase{\leftmark}}}` por `\fancyfoot[RE]{{\py@HeaderFamily\nouppercase{\rightmark}}}` (es decir, queda dos veces la misma linea en todo el bloque). De este modo, evitamos que algunos pie de página se corrompan por tener un nombre de capitulo largo. 
+

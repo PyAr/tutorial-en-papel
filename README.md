@@ -27,16 +27,19 @@ Si todo fue bien, en la ruta `.../tutorial_latex` tendremos todos los archivos n
 ## Ajustes en archivos '.tex'
 ### python-docs-es.tex
 Añadir / modificar:
-- `\documentclass[a5paper,10pt,spanish]{sphinxmanual}` tamaño de la hoja
+- `\documentclass[a5paper,10pt,spanish]{sphinxmanual}` tamaño de la hoja.
 
 - `
 \usepackage{geometry}
 \geometry{
- right=20mm
- }` margen para imprimir 
+ right=20mm,
+ left=10mm
+ }` margen para imprimir.
+
+- `\usepackage[hidelinks]{hyperref}` Añadimos `[hidelinks]` para evitar colorear hipervínculos.
 
 - `\title{Tutorial de Python}
-\release{3.10}` información que se replica en los encabezados 
+\release{3.10}` información que se replica en los encabezados. 
 
 - `\usepackage[gray]{xcolor}` el coloreado pasa a escala de grises. Se puede utilizar _[monochrome]_ para que directamente todo quede en negro.
 - `\fvset{fontsize=\footnotesize}` achica el tamaño de fuente en los bloques de sintaxis.

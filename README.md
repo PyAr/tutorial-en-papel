@@ -44,6 +44,7 @@ Añadir / modificar:
 - `\usepackage[gray]{xcolor}` el coloreado pasa a escala de grises. Se puede utilizar _[monochrome]_ para que directamente todo quede en negro.
 - `\fvset{fontsize=\footnotesize}` achica el tamaño de fuente en los bloques de sintaxis.
 - En las lineas 24 y ss. se definen los tres tipos de letras que se usan en todo el documento. Incluir el parámetro `Scale=0.9` en cada una para achicar el tamaño.
+- Para quitar la caratula por defecto: `%\sphinxmaketitle`. Luego añadir `\usepackage{pdfpages}` y `\includepdf[pages=-]{portada/cover-logo.pdf}` para reemplazar con carátula customizada.
 
 Eliminar:
 - todas las entradas `\subsubsection*{Notas al pie}` 

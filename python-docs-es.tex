@@ -83,14 +83,14 @@
 
 \authoraddress{
   \sphinxstrong{Python Software Foundation}\\
-  Email: \sphinxemail{docs@python.org}
+  Email: \sphinxemail{docs-es@python.org}
 }
 \let\Verbatim=\OriginalVerbatim
 \let\endVerbatim=\endOriginalVerbatim
 \setcounter{tocdepth}{2}
 
 \title{Tutorial de Python}
-\date{febrero, 2022}
+\date{agosto, 2022}
 \release{3.10}
 \author{Guido van Rossum\\y equipo de desarrollo de Python}
 \newcommand{\sphinxlogo}{\vbox{}}
@@ -102,7 +102,20 @@
 
 \pagestyle{empty}
 %\sphinxmaketitle
-\includepdf[pages=-]{portada/cover-logo.pdf}
+
+\includepdf[pages=-]{portada/cover-front.pdf}
+
+\sphinxAtStartPar
+\subsubsection{Comentarios iniciales}
+
+Varias veces en el pasado Python Argentina tradujo al castellano y editó en papel el "Tutorial de Python" oficial para mayor difusión de nuestro lenguaje.
+
+Hoy dicho tutorial, que no es otra cosa que el presente material, se entronca en el esfuerzo de numerosas personas hispanoparlantes de todo el mundo que han colaborado para traducir al español y disponibilizar la totalidad de la documentación (¡no sólo el tutorial!). 
+
+Con mucha alegría esperamos que este material rompa barreras idiomáticas y sea una puerta de entrada para todas aquellas personas de buena voluntad que se quieran sumergir e iniciar en el fascinante mundo del lenguaje de programación Python. 
+
+Para mayor información visitar: \sphinxstyleemphasis{https://github.com/python/python-docs-es}
+
 \pagestyle{plain}
 \sphinxtableofcontents
 \pagestyle{normal}
@@ -5676,6 +5689,11 @@ Para preguntas relacionadas con Python y reportes de problemas puedes escribir a
 
 \sphinxAtStartPar
 Antes de escribir, asegúrate de haber revisado la lista de \DUrole{xref,std,std-ref}{Frequently Asked Questions} (también llamado el \sphinxstyleemphasis{FAQ}). Muchas veces responde las preguntas que se hacen una y otra vez, y quizás contenga la solución a tu problema.
+
+\newpage{\ }
+\thispagestyle{empty}
+\includepdf[pages=-]{portada/cover-back.pdf}
+
 
 \renewcommand{\indexname}{Índice}
 \printindex

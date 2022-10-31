@@ -11,7 +11,8 @@ latex_documents = [
 # on the system using its own package manager
 latex_elements = {
     'papersize': 'a5paper',
-    'sphinxsetup': 'verbatimwithframe=false',
+    'sphinxsetup': 'verbatimwithframe=false, verbatimhintsturnover=false',
+    'extraclassoptions': 'twosides',
     'fontpkg': r'''
 \setmainfont{FreeSerif}[
   Extension      = .otf,
@@ -38,13 +39,14 @@ latex_elements = {
   Scale          = 0.9
 ]
 ''',
-    'geometry': r'''\usepackage{geometry}\geometry{ right=20mm, left=10mm }''',
+    'geometry': r'''\usepackage{geometry}\geometry{ right=10mm, left=20mm }''',
     'hyperref': r'''\usepackage[hidelinks]{hyperref}''',
     'maketitle': r'''
 \includepdf[pages=-]{../../../extra-pages/initial-pages.pdf}
 ''',
     'preamble': r'''
 \usepackage{pdfpages}
+\newif\ifsphinxverbatimwithminipage \sphinxverbatimwithminipagetrue
 ''',
     'passoptionstopackages': r'\PassOptionsToPackage{gray}{xcolor}',
     'fvset': r'''\fvset{fontsize=\footnotesize}''',
@@ -55,3 +57,8 @@ latex_elements = {
 ''',
 }
 latex_show_urls = 'inline'
+
+# Not sure if this is required or not
+latex_docclass = {
+    'manual': 'book'
+}

@@ -46,6 +46,9 @@ latex: build
 
 .PHONY: pdf
 pdf: latex
+	# Remove empty footnotes
+	# FIXME: this should be done via Sphinx properly
+	sed -i -e 's|\\subsubsection\*{Notas al pie}||g' python-docs-es/$(OUTPUT_LATEX)/Tutorial-Python_Python-Argentina.tex
 	cd python-docs-es/$(OUTPUT_LATEX) && make all-pdf
 
 

@@ -1,20 +1,22 @@
-En reiteradas oportunidades Python Argentina
-tradujo al castellano y editó en papel el "Tutorial de
-Python" para mayor difusión de nuestro lenguaje.
+.. TODO: use variables for |date| and |pythonversion|
 
-Hoy dicho tutorial, que no es otra cosa que el
-presente material, se entronca en el esfuerzo de
-numerosas personas hispanoparlantes de todo el
-mundo que han colaborado para traducir y
-disponibilizar en español la totalidad de la
-documentación (¡no sólo el tutorial!).
+.. This is an INITIAL page that I found, but I'm not sure it's required.
+   I'm removing it for now.
 
-Con mucha alegría esperamos que este material
-rompa barreras idiomáticas y sea una puerta de
-entrada para todas aquellas personas de buena
-voluntad que se quieran sumergir e iniciar en el
-fascinante mundo del lenguaje de programación
-Python.
+   Tutorial de Python
+   Versión 3.11
+   Autor original: Guido van Rossum
+   Editor original: Fred L. Drake, Jr.
+   Noviembre, 2022
 
-Para mayor información visitar:
-https://github.com/python/python-docs-es
+   Email: docs-es@python.org
+
+   Esta documentación está cubierta por la Licencia PSF para
+   Python 3.11, que básicamente permite el uso, copiado,
+   modificación y distribución de este contenido. Para mayor
+   detalle: https://docs.python.org/3.10/copyright.html"
+   Copyright Python Software Foundation
+
+   Material editado e impreso por la Asociación Civil Python Argentina.
+
+   Distribución gratuita, prohibida su venta.

@@ -40,6 +40,8 @@ latex_elements = {
     'maketitle': r'''
 \includepdf[pages=-]{../../../extra-pages/cover-front.pdf}
 
+\newpage
+
 \section*{Comentarios iniciales}
 \addcontentsline{toc}{section}{Comentarios iniciales}
 

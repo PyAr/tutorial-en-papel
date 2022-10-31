@@ -87,3 +87,6 @@ latex_show_urls = 'inline'
 latex_docclass = {
     'manual': 'book'
 }
+
+# Override appendices to remove license, about, etc
+latex_appendices = ['glossary']

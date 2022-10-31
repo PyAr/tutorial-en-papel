@@ -1,0 +1,6 @@
+.PHONY: tutorial-index
+tutorial-index: setup
+	sed -i -e 's|interactive.rst||g' cpython/Doc/tutorial/index.rst
+	sed -i -e 's|floatingpoint.rst||g' cpython/Doc/tutorial/index.rst
+	sed -i -e 's|appendix.rst||g' cpython/Doc/tutorial/index.rst
+	# rm cpython/Doc/tutorial/appendix.rst cpython/Doc/tutorial/floatingpoint.rst cpython/Doc/tutorial/interactive.rst

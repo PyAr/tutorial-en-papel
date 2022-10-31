@@ -41,7 +41,7 @@ latex_elements = {
     'geometry': r'''\usepackage{geometry}\geometry{ right=20mm, left=10mm }''',
     'hyperref': r'''\usepackage[hidelinks]{hyperref}''',
     'maketitle': r'''
-\includepdf[pages=-]{../../tutorial_python_ES/portada/cover-front.pdf}
+\includepdf[pages=-]{../../../extra-pages/initial-pages.pdf}
 ''',
     'preamble': r'''
 \usepackage{pdfpages}
@@ -51,7 +51,7 @@ latex_elements = {
     'printindex': r'''
 \renewcommand{\indexname}{Índice}
 \printindex
-\includepdf[pages=-]{../../tutorial_python_ES/portada/cover-back.pdf}
+\includepdf[pages=-]{../../../extra-pages/cover-back.pdf}
 ''',
 }
 latex_show_urls = 'inline'

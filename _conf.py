@@ -88,4 +88,4 @@ latex_docclass = {
 }
 
 # Override appendices to remove license, about, etc
-latex_appendices = ['glossary']
+latex_appendices = [] # ['glossary']

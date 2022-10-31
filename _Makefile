@@ -1,6 +1,12 @@
 .PHONY: tutorial-index
 tutorial-index: setup
 	cp ../extra-pages/initial.rst cpython/Doc/tutorial
+	cp ../_contents.rst cpython/Doc/contents.rst
+
+	rm cpython/Doc/about.rst
+	rm cpython/Doc/license.rst
+	rm cpython/Doc/copyright.rst
+
 	sed -i -e 's|appetite.rst|initial.rst\n   appetite.rst|g' cpython/Doc/tutorial/index.rst
 	sed -i -e 's|interactive.rst||g' cpython/Doc/tutorial/index.rst
 	sed -i -e 's|floatingpoint.rst||g' cpython/Doc/tutorial/index.rst

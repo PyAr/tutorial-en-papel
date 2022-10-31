@@ -6,9 +6,6 @@ latex_documents = [
 
 # Configure PDF building for PRINTED version of the Tutorial
 # https://www.sphinx-doc.org/en/master/latex.html
-#
-# Install `latex-mk` and `texlive-latexextra` and `texlive-fontsextra`
-# on the system using its own package manager
 latex_elements = {
     'papersize': 'a5paper',
     'sphinxsetup': 'verbatimwithframe=false, verbatimhintsturnover=false',

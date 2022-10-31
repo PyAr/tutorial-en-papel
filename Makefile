@@ -5,7 +5,6 @@ BRANCH              := 3.11
 LANGUAGE            := es
 
 # Internal variables
-VENV                   := $(shell realpath ./python-docs-es/venv)
 OUTPUT_LATEX           := _build/latex
 CPYTHON_WORKDIR        := python-docs-es/cpython
 OUTPUT_DOCTREE         := $(CPYTHON_WORKDIR)/Doc/build/doctree
@@ -20,9 +19,6 @@ help:
 .PHONY: setup
 setup:
 	git clone --depth 1 https://github.com/python/python-docs-es/ || true
-	# cd python-docs-es && git reset --hard origin/$(BRANCH)
-	# cd python-docs-es && git submodule sync
-	# cd python-docs-es && git submodule update --init --force --depth 1 $(CPYTHON_PATH)
 
 
 .PHONY: build
@@ -41,7 +37,7 @@ build: setup
 
 .PHONY: latex
 latex: build
-	cd python-docs-es && PYTHONWARNINGS=ignore::FutureWarning,ignore::RuntimeWarning $(VENV)/bin/sphinx-build -j auto --keep-going -b latex -d $(OUTPUT_DOCTREE)/tutorial -D language=$(LANGUAGE) . $(OUTPUT_LATEX)
+	cd python-docs-es && PYTHONWARNINGS=ignore::FutureWarning,ignore::RuntimeWarning venv/bin/sphinx-build -j auto --keep-going -b latex -d $(OUTPUT_DOCTREE)/tutorial -D language=$(LANGUAGE) . $(OUTPUT_LATEX)
 
 
 .PHONY: pdf
@@ -54,7 +50,7 @@ pdf: latex
 
 .PHONY: clean
 clean:
-	rm -rf $(VENV)
+	rm -rf python-docs-es/venv
 	rm -rf $(OUTPUT_LATEX)
 	rm -rf $(OUTPUT_DOCTREE)
 	cd python-docs-es && git reset --hard origin/$(BRANCH)

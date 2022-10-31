@@ -37,7 +37,7 @@ build: setup
 
 .PHONY: latex
 latex: build
-	cd python-docs-es && PYTHONWARNINGS=ignore::FutureWarning,ignore::RuntimeWarning venv/bin/sphinx-build -j auto --keep-going -b latex -d $(OUTPUT_DOCTREE)/tutorial -D language=$(LANGUAGE) . $(OUTPUT_LATEX)
+	cd python-docs-es && PYTHONWARNINGS=ignore::FutureWarning,ignore::RuntimeWarning venv/bin/sphinx-build -j auto --keep-going -b latex -d $(OUTPUT_DOCTREE) -D language=$(LANGUAGE) . $(OUTPUT_LATEX)
 
 
 .PHONY: pdf

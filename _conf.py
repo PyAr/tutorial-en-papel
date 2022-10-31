@@ -77,8 +77,6 @@ Para mayor información visitar:
     'passoptionstopackages': r'\PassOptionsToPackage{gray}{xcolor}',
     'fvset': r'''\fvset{fontsize=\footnotesize}''',
     'printindex': r'''
-\renewcommand{\indexname}{Índice}
-\printindex
 \includepdf[pages=-]{../../../extra-pages/cover-back.pdf}
 ''',
 }

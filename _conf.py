@@ -39,7 +39,7 @@ latex_elements = {
     'geometry': r'''\usepackage{geometry}\geometry{ right=10mm, left=20mm }''',
     'hyperref': r'''\usepackage[hidelinks]{hyperref}''',
     'maketitle': r'''
-\includepdf[pages=-]{../../../extra-pages/initial-pages.pdf}
+\includepdf[pages=-]{../../../extra-pages/cover-front.pdf}
 ''',
     'preamble': r'''
 \usepackage{pdfpages}

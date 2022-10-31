@@ -9,7 +9,6 @@ latex_documents = [
 latex_elements = {
     'papersize': 'a5paper',
     'sphinxsetup': 'verbatimwithframe=false, verbatimhintsturnover=false',
-    'extraclassoptions': 'twosides',
     'fontpkg': r'''
 \setmainfont{FreeSerif}[
   Extension      = .otf,

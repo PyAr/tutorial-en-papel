@@ -80,7 +80,7 @@ Para mayor información visitar:
 \includepdf[pages=-]{../../../extra-pages/cover-back.pdf}
 ''',
 }
-latex_show_urls = 'inline'
+latex_show_urls = 'footnote'
 
 # Not sure if this is required or not
 latex_docclass = {

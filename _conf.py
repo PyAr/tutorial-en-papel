@@ -17,7 +17,7 @@ latex_elements = {
     'pointsize': '9pt',
     'fontpkg': r'''
 \usepackage[familydefault]{Rosario}
-\usepackage{noto}
+\setmonofont{Fira Code}
 \usepackage[T1]{fontenc}
 ''',
     'geometry': r'''\usepackage{geometry}\geometry{ right=10mm, left=20mm }''',

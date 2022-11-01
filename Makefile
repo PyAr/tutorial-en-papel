@@ -42,7 +42,11 @@ setup:
 
 .PHONY: adapts-chapters
 adapt-chapters: setup
-	sed -i -e 's|appetite.rst|initial.rst\n   appetite.rst|g' $(CPYTHON_DOC)/tutorial/index.rst
+	# TODO: figure it out how to include the initial page:
+	# https://github.com/cacrespo/tutorial_python_ES/issues/8#issuecomment-1298318203
+	# sed -i -e 's|appetite.rst|initial.rst\n   appetite.rst|g' $(CPYTHON_DOC)/tutorial/index.rst
+
+	# Remove this chapters because we don't want them in the printed version
 	sed -i -e 's|interactive.rst||g' $(CPYTHON_DOC)/tutorial/index.rst
 	sed -i -e 's|floatingpoint.rst||g' $(CPYTHON_DOC)/tutorial/index.rst
 	sed -i -e 's|appendix.rst||g' $(CPYTHON_DOC)/tutorial/index.rst

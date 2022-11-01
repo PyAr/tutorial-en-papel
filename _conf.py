@@ -56,6 +56,9 @@ Para mayor información visitar:
 \sphinxurl{https://github.com/python/python-docs-es}
 ''',
     'preamble': r'''
+% Make the code inside the paragraphs to be gray
+\protected\def\sphinxcode#1{\textcolor{gray}{\texttt{#1}}}
+
 \usepackage{pdfpages}
 \newif\ifsphinxverbatimwithminipage \sphinxverbatimwithminipagetrue
 ''',

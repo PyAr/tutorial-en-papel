@@ -34,6 +34,7 @@ fix-paths: setup
 .PHONY: setup
 setup:
 	git clone --depth 1 https://github.com/python/python-docs-es/ || true
+	cd python-docs-es && git pull
 
 	cd python-docs-es && git checkout -- conf.py
 	cat _conf.py >> python-docs-es/conf.py

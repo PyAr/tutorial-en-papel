@@ -49,13 +49,18 @@ adapt-chapters: setup
 	cp _contents.rst $(CPYTHON_DOC)/contents.rst
 
 
+.PHONY: apply-patches
+apply-patches: setup
+	cd python-docs-es/cpython && git apply ../../patches/*
+
+
 .PHONY: venv
 venv: setup
 	cd python-docs-es && make venv
 
 
 .PHONY: latex
-latex: setup venv fix-paths adapt-chapters
+latex: setup venv fix-paths adapt-chapters apply-patches
 	cd python-docs-es && PYTHONWARNINGS=ignore::FutureWarning,ignore::RuntimeWarning venv/bin/sphinx-build -j auto --keep-going -b latex -d $(OUTPUT_DOCTREE) -D language=$(LANGUAGE) . $(OUTPUT_LATEX)
 
 

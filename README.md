@@ -1,8 +1,8 @@
-# Tutorial oficial de Python en Español (versión impresa)
+# Tutorial de Python en Español (versión impresa)
 
 Versión del Tutorial oficial de Python en Español para la impresión "en papel".
 
-_(la traducción utilizar para la construcción del PDF es realizada en el repositorio https://github.com/python/python-docs-es)_
+_(la traducción utilizada para la construcción del PDF es realizada en el repositorio https://github.com/python/python-docs-es)_
 
 ## Construir el PDF
 

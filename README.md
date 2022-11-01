@@ -2,7 +2,7 @@
 
 Versión del Tutorial oficial de Python en Español para la impresión "en papel".
 
-_(la traducción utilizar para la construcción del PDF es realizada en el repositorio https://github.com/python/python-docs-es
+_(la traducción utilizar para la construcción del PDF es realizada en el repositorio https://github.com/python/python-docs-es)_
 
 ## Construir el PDF
 

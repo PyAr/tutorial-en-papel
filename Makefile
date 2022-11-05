@@ -36,6 +36,10 @@ setup:
 	git clone --depth 1 https://github.com/python/python-docs-es/ || true
 	cd python-docs-es && git pull
 
+  # Sync CPython Git submodule
+	cd python-docs-es && git submodule sync
+	cd python-docs-es && git submodule update --init --force --depth 1
+
 	cd python-docs-es && git checkout -- conf.py
 	cat _conf.py >> python-docs-es/conf.py
 

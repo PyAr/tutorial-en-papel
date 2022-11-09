@@ -1,0 +1,22 @@
+diff --git a/tutorial/index.po b/tutorial/index.po
+index 4f510e4..7413a5c 100644
+--- a/tutorial/index.po
++++ b/tutorial/index.po
+@@ -100,15 +100,14 @@ msgid ""
+ "Python's most noteworthy features, and will give you a good idea of the "
+ "language's flavor and style. After reading it, you will be able to read and "
+ "write Python modules and programs, and you will be ready to learn more about "
+-"the various Python library modules described in :ref:`library-index`."
++"the various Python library modules."
+ msgstr ""
+ "Este tutorial no pretende ser exhaustivo ni cubrir cada una de las "
+ "características del lenguaje, ni siquiera las más utilizadas. En vez de eso, "
+ "pretende introducir muchas de las funcionalidades más notables y brindar una "
+ "idea clara acerca del estilo y el tipo de lenguaje que es Python. Después de "
+ "leerlo podrás leer y escribir módulos y programas en Python, y estarás listo "
+-"para aprender más acerca de las diversas librerías y módulos descritos en :"
+-"ref:`library-index`."
++"para aprender más acerca de las diversas librerías y módulos."
+ 
+ #: ../Doc/tutorial/index.rst:40
+ msgid "The :ref:`glossary` is also worth going through."

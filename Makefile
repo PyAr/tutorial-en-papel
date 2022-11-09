@@ -60,7 +60,8 @@ adapt-chapters: setup
 
 .PHONY: apply-patches
 apply-patches: setup
-	cd python-docs-es/cpython && git apply ../../patches/*
+	cd python-docs-es/cpython && git apply ../../patches/*.diff
+	cd python-docs-es && git apply ../patches/translation/*.diff
 
 
 .PHONY: venv

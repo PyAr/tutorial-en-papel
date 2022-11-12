@@ -1,0 +1,15 @@
+diff --git a/tutorial/introduction.po b/tutorial/introduction.po
+index edc3cf0..da3672d 100644
+--- a/tutorial/introduction.po
++++ b/tutorial/introduction.po
+@@ -190,8 +190,8 @@ msgid ""
+ msgstr ""
+ "Además de :class:`int` y :class:`float`, Python admite otros tipos de "
+ "números, como :class:`~decimal.Decimal` y :class:`~fractions.Fraction`. "
+-"Python también tiene soporte incorporado para :ref:`complex numbers "
+-"<typesnumeric>`, y usa el sufijo ``j`` o ``J`` para indicar la parte "
++"Python también tiene soporte incorporado para :ref:`números complejos "
++"<python:typesnumeric>`, y usa el sufijo ``j`` o ``J`` para indicar la parte "
+ "imaginaria (por ejemplo, ``3+5j``)."
+ 
+ #: ../Doc/tutorial/introduction.rst:142

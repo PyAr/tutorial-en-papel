@@ -28,6 +28,7 @@ latex_elements = {
 % Include extra pages in LaTeX
 % Borrowed from https://github.com/jfogarty/latex-nonfiction-ebook-template/
 \input{../../../extra-pages/title.tex}
+\input{../../../extra-pages/quote.tex}
 \input{../../../extra-pages/copyright.tex}
 \input{../../../extra-pages/preface.tex}
 ''',

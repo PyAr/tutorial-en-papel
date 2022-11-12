@@ -1,0 +1,34 @@
+diff --git a/tutorial/interpreter.po b/tutorial/interpreter.po
+index f19a95a..9b433db 100644
+--- a/tutorial/interpreter.po
++++ b/tutorial/interpreter.po
+@@ -99,8 +99,8 @@ msgstr ""
+ "html>`_ librería. Quizás la forma más rápida para comprobar si las "
+ "características de edición se encuentran disponibles es presionar :kbd:"
+ "`Control-P` en el primer prompt de Python que aparezca. Si se escucha un "
+-"sonido, tienes edición de línea de comandos; ver Apéndice :ref:`tut-"
+-"interacting` para una introducción a las teclas. Si no parece que ocurra "
++"sonido, tienes edición de línea de comandos; ver Apéndice "
++"\":ref:`python:tut-interacting`\" para una introducción a las teclas. Si no parece que ocurra "
+ "nada, o si se muestra ``^P``, estas características no están disponibles; "
+ "solo vas a poder usar la tecla de retroceso (*backspace*) para borrar los "
+ "caracteres de la línea actual."
+@@ -157,8 +157,7 @@ msgstr ""
+ #: ../Doc/tutorial/interpreter.rst:65
+ msgid "All command line options are described in :ref:`using-on-general`."
+ msgstr ""
+-"Todas las opciones de la línea de comandos se describen en :ref:`using-on-"
+-"general`."
++"Todas las opciones de la línea de comandos se describen en \":ref:`python:using-on-general`\"."
+ 
+ #: ../Doc/tutorial/interpreter.rst:71
+ msgid "Argument Passing"
+@@ -225,7 +224,7 @@ msgstr ""
+ #: ../Doc/tutorial/interpreter.rst:118
+ msgid "For more on interactive mode, see :ref:`tut-interac`."
+ msgstr ""
+-"Para más información sobre el modo interactivo, ver :ref:`tut-interac`."
++"Para más información sobre el modo interactivo, ver \":ref:`python:tut-interac`\"."
+ 
+ #: ../Doc/tutorial/interpreter.rst:124
+ msgid "The Interpreter and Its Environment"

@@ -77,3 +77,13 @@ latex_docclass = {
 
 # Override appendices to remove license, about, etc
 latex_appendices = [] # ['glossary']
+
+
+# Use intersphinx to resolve links to content not included in the tutorial.
+# See:
+# https://github.com/PyAr/tutorial-en-papel/issues/18
+# https://github.com/PyAr/tutorial-en-papel/issues/25#issuecomment-1311679864
+#
+# Doc: https://www.sphinx-doc.org/en/master/usage/quickstart.html#intersphinx
+extensions.append('sphinx.ext.intersphinx')
+intersphinx_mapping = {'python': ('https://docs.python.org/es/3', None)}

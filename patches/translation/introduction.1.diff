@@ -1,5 +1,5 @@
 diff --git a/tutorial/introduction.po b/tutorial/introduction.po
-index dc4935c..a02d2a6 100644
+index dc4935c..b791c4e 100644
 --- a/tutorial/introduction.po
 +++ b/tutorial/introduction.po
 @@ -36,7 +36,7 @@ msgid ""
@@ -70,6 +70,15 @@ index dc4935c..a02d2a6 100644
  
  #: ../Doc/tutorial/introduction.rst:372
  msgid "Information about string formatting with :meth:`str.format`."
+@@ -450,7 +451,7 @@ msgstr ""
+ 
+ #: ../Doc/tutorial/introduction.rst:375
+ msgid ":ref:`old-string-formatting`"
+-msgstr ":ref:`old-string-formatting`"
++msgstr ":ref:`python:old-string-formatting`"
+ 
+ #: ../Doc/tutorial/introduction.rst:375
+ msgid ""
 @@ -482,8 +483,8 @@ msgid ""
  "Like strings (and all other built-in :term:`sequence` types), lists can be "
  "indexed and sliced::"

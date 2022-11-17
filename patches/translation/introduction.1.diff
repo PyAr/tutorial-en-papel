@@ -13,3 +13,80 @@ index edc3cf0..da3672d 100644
  "imaginaria (por ejemplo, ``3+5j``)."
  
  #: ../Doc/tutorial/introduction.rst:142
+@@ -408,7 +408,7 @@ msgstr "La función incorporada :func:`len` retorna la longitud de una cadena::"
+ 
+ #: ../Doc/tutorial/introduction.rst:362
+ msgid ":ref:`textseq`"
+-msgstr ":ref:`textseq`"
++msgstr ":ref:`python:textseq`"
+ 
+ #: ../Doc/tutorial/introduction.rst:361
+ msgid ""
+@@ -420,7 +420,7 @@ msgstr ""
+ 
+ #: ../Doc/tutorial/introduction.rst:366
+ msgid ":ref:`string-methods`"
+-msgstr ":ref:`string-methods`"
++msgstr ":ref:`python:string-methods`"
+ 
+ #: ../Doc/tutorial/introduction.rst:365
+ msgid ""
+@@ -432,7 +432,7 @@ msgstr ""
+ 
+ #: ../Doc/tutorial/introduction.rst:369
+ msgid ":ref:`f-strings`"
+-msgstr ":ref:`f-strings`"
++msgstr ":ref:`python:f-strings`"
+ 
+ #: ../Doc/tutorial/introduction.rst:369
+ msgid "String literals that have embedded expressions."
+@@ -440,7 +440,7 @@ msgstr "Literales de cadena que tienen expresiones embebidas."
+ 
+ #: ../Doc/tutorial/introduction.rst:372
+ msgid ":ref:`formatstrings`"
+-msgstr ":ref:`formatstrings`"
++msgstr ":ref:`python:formatstrings`"
+ 
+ #: ../Doc/tutorial/introduction.rst:372
+ msgid "Information about string formatting with :meth:`str.format`."
+@@ -450,7 +450,7 @@ msgstr ""
+ 
+ #: ../Doc/tutorial/introduction.rst:375
+ msgid ":ref:`old-string-formatting`"
+-msgstr ":ref:`old-string-formatting`"
++msgstr ":ref:`python:old-string-formatting`"
+ 
+ #: ../Doc/tutorial/introduction.rst:375
+ msgid ""
+@@ -482,8 +482,8 @@ msgid ""
+ "Like strings (and all other built-in :term:`sequence` types), lists can be "
+ "indexed and sliced::"
+ msgstr ""
+-"Al igual que las cadenas (y todos las demás tipos integrados :term:"
+-"`sequence`), las listas se pueden indexar y segmentar:"
++"Al igual que las cadenas (y todas los demás tipos integrados :term:`python:"
++"sequence`), las listas se pueden indexar y segmentar:"
+ 
+ #: ../Doc/tutorial/introduction.rst:403
+ msgid ""
+@@ -493,7 +493,7 @@ msgid ""
+ msgstr ""
+ "Todas las operaciones de rebanado retornan una nueva lista que contiene los "
+ "elementos pedidos. Esto significa que la siguiente rebanada retorna una :ref:"
+-"`shallow copy <shallow_vs_deep_copy>` de la lista::"
++"`copia superficial <python:shallow_vs_deep_copy>` de la lista::"
+ 
+ #: ../Doc/tutorial/introduction.rst:410
+ msgid "Lists also support operations like concatenation::"
+@@ -504,8 +504,9 @@ msgid ""
+ "Unlike strings, which are :term:`immutable`, lists are a :term:`mutable` "
+ "type, i.e. it is possible to change their content::"
+ msgstr ""
+-"A diferencia de las cadenas, que son :term:`immutable`, las listas son de "
+-"tipo :term:`mutable`, es decir, es posible cambiar su contenido::"
++"A diferencia de las cadenas, que son :term:`python:immutable`, las listas "
++"son de tipo :term:`python:mutable`, es decir, es posible cambiar su "
++"contenido::"
+ 
+ #: ../Doc/tutorial/introduction.rst:425
+ msgid ""

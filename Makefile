@@ -86,6 +86,7 @@ pdf: latex
 
 .PHONY: clean
 clean:
+	rm -f Tutorial-Python_Python-Argentina.pdf
 	rm -rf python-docs-es/venv
 	rm -rf python-docs-es/$(OUTPUT_LATEX)
 	rm -rf python-docs-es/$(OUTPUT_DOCTREE)

@@ -10,5 +10,5 @@ _(la traducción utilizada para la construcción del PDF es realizada en el repo
 1. Instalar dependencies del sistema necesarias (`latex-mk`, `ttf-fira-code`, `texlive-latexextra` y `texlive-fontsextra` en Arch Linux)
 1. Ejecutar `make pdf`
 
-En el directorio `python-docs-es/_build/latex/` se encuentra el PDF.
-Ejecuta `exo-open python-docs-es/_build/latex/Tutorial-Python_Python-Argentina.pdf`
+El PDF que se encuentra en `python-docs-es/_build/latex/` se copia al directorio raíz del proyecto.
+Ejecuta `exo-open Tutorial-Python_Python-Argentina.pdf`

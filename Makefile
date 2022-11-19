@@ -14,6 +14,7 @@ CPYTHON_DOC            := python-docs-es/cpython/Doc
 help:
 	@echo "Please use 'make <target>' where <target> is one of:"
 	@echo " pdf        Build the PDF for the Tutorial"
+	@echo " clean      Clean folders and make everything ready to run again"
 	@echo ""
 
 
@@ -80,10 +81,12 @@ pdf: latex
 	# FIXME: this should be done via Sphinx properly
 	sed -i -e 's|\\subsubsection\*{Notas al pie}||g' python-docs-es/$(OUTPUT_LATEX)/Tutorial-Python_Python-Argentina.tex
 	cd python-docs-es/$(OUTPUT_LATEX) && make all-pdf
+	cp python-docs-es/$(OUTPUT_LATEX)/Tutorial-Python_Python-Argentina.pdf .
 
 
 .PHONY: clean
 clean:
+	rm -f Tutorial-Python_Python-Argentina.pdf
 	rm -rf python-docs-es/venv
 	rm -rf python-docs-es/$(OUTPUT_LATEX)
 	rm -rf python-docs-es/$(OUTPUT_DOCTREE)

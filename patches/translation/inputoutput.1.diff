@@ -1,0 +1,112 @@
+diff --git a/tutorial/inputoutput.po b/tutorial/inputoutput.po
+index 73c6ecd..923a070 100644
+--- a/tutorial/inputoutput.po
++++ b/tutorial/inputoutput.po
+@@ -11,7 +11,7 @@ msgstr ""
+ "Project-Id-Version: Python 3.8\n"
+ "Report-Msgid-Bugs-To: \n"
+ "POT-Creation-Date: 2022-10-25 19:47+0200\n"
+-"PO-Revision-Date: 2023-02-04 16:01-0300\n"
++"PO-Revision-Date: 2023-02-13 10:24-0300\n"
+ "Last-Translator: Carlos A. Crespo <lvccrespo@gmail.com>\n"
+ "Language-Team: python-doc-es\n"
+ "Language: es\n"
+@@ -49,10 +49,7 @@ msgid ""
+ "stdout``. See the Library Reference for more information on this.)"
+ msgstr ""
+ "Hasta ahora encontramos dos maneras de escribir valores: *declaraciones de "
+-"expresión* y la función :func:`print`.  (Una tercera manera es usando el "
+-"método :meth:`write` de los objetos tipo archivo; el archivo de salida "
+-"estándar puede referenciarse como ``sys.stdout``.  Mirá la Referencia de la "
+-"Biblioteca para más información sobre esto)."
++"expresión* y la función :func:`print`."
+ 
+ #: ../Doc/tutorial/inputoutput.rst:22
+ msgid ""
+@@ -210,10 +207,10 @@ msgid ""
+ "information on the ``=`` specifier. For a reference on these format "
+ "specifications, see the reference guide for the :ref:`formatspec`."
+ msgstr ""
+-"Véase :ref:`expresiones auto-documentadas <bpo-36817-whatsnew>` para más "
+-"información en el especificador ``=``. Para obtener una referencia sobre "
++"Véase :ref:`expresiones auto-documentadas <python:bpo-36817-whatsnew>` para "
++"más información en el especificador ``=``. Para obtener una referencia sobre "
+ "estas especificaciones de formato, consulte la guía de referencia para :ref:"
+-"`formatspec`."
++"`python:formatspec`."
+ 
+ #: ../Doc/tutorial/inputoutput.rst:152
+ msgid "The String format() Method"
+@@ -291,7 +288,7 @@ msgid ""
+ "ref:`formatstrings`."
+ msgstr ""
+ "Para una completa descripción del formateo de cadenas con :meth:`str."
+-"format`, ver :ref:`string-formatting`."
++"format`, ver :ref:`python:string-formatting`."
+ 
+ #: ../Doc/tutorial/inputoutput.rst:224
+ msgid "Manual String Formatting"
+@@ -361,7 +358,8 @@ msgstr ""
+ msgid ""
+ "More information can be found in the :ref:`old-string-formatting` section."
+ msgstr ""
+-"Podés encontrar más información en la sección :ref:`old-string-formatting`."
++"Podés encontrar más información en la sección :ref:`python:old-string-"
++"formatting`."
+ 
+ #: ../Doc/tutorial/inputoutput.rst:285
+ msgid "Reading and Writing Files"
+@@ -373,8 +371,8 @@ msgid ""
+ "two positional arguments and one keyword argument: ``open(filename, mode, "
+ "encoding=None)``"
+ msgstr ""
+-"La función :func:`open` retorna un :term:`file object`, y se usa normalmente "
+-"con dos argumentos posicionales y un argumento nombrado: "
++"La función :func:`open` retorna un :term:`objeto archivo`, y se usa "
++"normalmente con dos argumentos posicionales y un argumento nombrado: "
+ "``open(nombre_de_archivo, modo, encoding=None)``."
+ 
+ #: ../Doc/tutorial/inputoutput.rst:304
+@@ -410,14 +408,14 @@ msgid ""
+ "objects. You can not specify *encoding* when opening file in binary mode."
+ msgstr ""
+ "Normalmente, los ficheros se abren en :dfn:`modo texto`, es decir, se leen y "
+-"escriben cadenas desde y hacia el fichero, que están codificadas en una "
+-"*codificación* específica. Si no se especifica *codificación*, el valor por "
+-"defecto depende de la plataforma (véase :func:`open`). Dado que UTF-8 es el "
+-"estándar moderno de facto, se recomienda ``encoding=\"utf-8\"`` a menos que "
+-"sepa que necesita usar una codificación diferente. Añadiendo ``'b'`` al modo "
+-"se abre el fichero en :dfn:`modo binario`. Los datos en modo binario se leen "
+-"y escriben como objetos :class:`bytes`. No se puede especificar "
+-"*codificación* al abrir un fichero en modo binario."
++"escriben cadenas desde y hacia el fichero, que están codificadas en un "
++"*encoding* específico. Si no se especifica *codificación*, el valor por "
++"defecto depende de la plataforma (véase :func:`python:open`). Dado que UTF-8 "
++"es el estándar moderno de facto, se recomienda ``encoding=\"utf-8\"`` a "
++"menos que sepa que necesita usar una codificación diferente. Añadiendo "
++"``'b'`` al modo se abre el fichero en :dfn:`modo binario`. Los datos en modo "
++"binario se leen y escriben como objetos :class:`bytes`. No se puede "
++"especificar *codificación* al abrir un fichero en modo binario."
+ 
+ #: ../Doc/tutorial/inputoutput.rst:323
+ msgid ""
+@@ -695,8 +693,8 @@ msgid ""
+ "To decode the object again, if ``f`` is a :term:`binary file` or :term:`text "
+ "file` object which has been opened for reading::"
+ msgstr ""
+-"Para decodificar un objeto nuevamente, si ``f`` es un objeto :term:`binary "
+-"file` o :term:`text file` que fue abierto para lectura::"
++"Para decodificar un objeto nuevamente, si ``f`` es un objeto :term:`archivo "
++"binario` o :term:`archivo de texto` que fue abierto para lectura::"
+ 
+ #: ../Doc/tutorial/inputoutput.rst:513
+ msgid ""
+@@ -721,7 +719,7 @@ msgstr ""
+ 
+ #: ../Doc/tutorial/inputoutput.rst:522
+ msgid ":mod:`pickle` - the pickle module"
+-msgstr ":mod:`pickle` - El módulo *pickle*"
++msgstr ":mod:`python:pickle` - El módulo *pickle*"
+ 
+ #: ../Doc/tutorial/inputoutput.rst:524
+ msgid ""

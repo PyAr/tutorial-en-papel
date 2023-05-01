@@ -62,7 +62,7 @@ index 73c6ecd..923a070 100644
  msgstr ""
 -"La función :func:`open` retorna un :term:`file object`, y se usa normalmente "
 -"con dos argumentos posicionales y un argumento nombrado: "
-+"La función :func:`open` retorna un :term:`objeto archivo`, y se usa "
++"La función :func:`open` retorna un :term:`python:objeto archivo`, y se usa "
 +"normalmente con dos argumentos posicionales y un argumento nombrado: "
  "``open(nombre_de_archivo, modo, encoding=None)``."
  
@@ -96,8 +96,8 @@ index 73c6ecd..923a070 100644
  msgstr ""
 -"Para decodificar un objeto nuevamente, si ``f`` es un objeto :term:`binary "
 -"file` o :term:`text file` que fue abierto para lectura::"
-+"Para decodificar un objeto nuevamente, si ``f`` es un objeto :term:`archivo "
-+"binario` o :term:`archivo de texto` que fue abierto para lectura::"
++"Para decodificar un objeto nuevamente, si ``f`` es un objeto :term:`python:archivo "
++"binario` o :term:`python:archivo de texto` que fue abierto para lectura::"
  
  #: ../Doc/tutorial/inputoutput.rst:513
  msgid ""

@@ -8,7 +8,7 @@ index dc4935c..b791c4e 100644
  "En los siguientes ejemplos, la entrada y la salida se distinguen por la "
 -"presencia o ausencia de prompts (:term:`>>>` y :term:`...`): para repetir el "
 +"presencia o ausencia de prompts (``>>>`` o ``...``): para repetir el "
- "ejemplo, escribe todo después del prompt cuando aparece; las líneas que no "
+ "ejemplo, escribe todo después del prompt, cuando aparece; las líneas que no "
  "comienzan con un prompt son emitidas desde el intérprete. Ten en cuenta que "
  "en un ejemplo un prompt secundario en una linea en solitario significa que "
 @@ -126,8 +126,9 @@ msgid ""

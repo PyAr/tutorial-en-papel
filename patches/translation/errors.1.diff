@@ -1,0 +1,31 @@
+diff --git a/tutorial/errors.po b/tutorial/errors.po
+index 4f62c15..5621acd 100644
+--- a/tutorial/errors.po
++++ b/tutorial/errors.po
+@@ -133,7 +133,7 @@ msgstr ""
+ msgid ""
+ ":ref:`bltin-exceptions` lists the built-in exceptions and their meanings."
+ msgstr ""
+-":ref:`bltin-exceptions` lista las excepciones predefinidas y sus "
++":ref:`python:bltin-exceptions` lista las excepciones predefinidas y sus "
+ "significados."
+ 
+ #: ../Doc/tutorial/errors.rst:80
+@@ -425,7 +425,7 @@ msgid ""
+ "For more information about chaining mechanics, see :ref:`bltin-exceptions`."
+ msgstr ""
+ "Para obtener más información sobre la mecánica del encadenamiento, consulte :"
+-"ref:`bltin-exceptions`."
++"ref:`python:bltin-exceptions`."
+ 
+ #: ../Doc/tutorial/errors.rst:351
+ msgid "User-defined Exceptions"
+@@ -450,7 +450,7 @@ msgid ""
+ "allow information about the error to be extracted by handlers for the "
+ "exception."
+ msgstr ""
+-"Las clases de Excepción pueden ser definidas de la misma forma que cualquier "
++"Las clases excepción pueden ser definidas de la misma forma que cualquier "
+ "otra clase, pero es habitual mantenerlas lo más simples posible, a menudo "
+ "ofreciendo solo un número de atributos con información sobre el error que "
+ "leerán los gestores de la excepción."
